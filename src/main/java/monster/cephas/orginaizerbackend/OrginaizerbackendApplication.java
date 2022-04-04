@@ -13,6 +13,7 @@ public class OrginaizerbackendApplication {
 	public static void main(String[] args) {
 		SpringApplication.run(OrginaizerbackendApplication.class, args);
 	};
+    // test drive
     @GetMapping("/hello")
     public String hello(@RequestParam(value= "name", defaultValue="World") String name){
         return String.format("hello %s!", name);
